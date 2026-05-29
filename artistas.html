@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Music Site - Artists</title>
+    <link rel="stylesheet" href="estilos_artistas.css">
+</head>
+<body>
+    <div id="contenedor-dashboard">
+        <header class="dash-header">
+            <div class="bienvenida">
+                <h1>Welcome:</h1>
+                <h2 id="usuario-nombre">Guest</h2>
+            </div>
+            <nav class="dash-nav">
+                <a href="#">Home</a> | 
+                <a href="#">Categories</a> | 
+                <a href="#">Store</a> |
+            </nav>
+        </header>
+        
+        <div class="contenido-principal">
+            <main class="seccion-artistas">
+                <div class="tarjeta-artista">
+                    <img src="C:/Users/Jane/Downloads/ab67616d0000b273f8e0c1ff3b125426ea197b4d.jpg" alt="Dua Lipa">
+                    <h3>Dua Lipa</h3>
+                    <p>Dua Lipa is a British singer, songwriter, and model of Albanian and Kosovar descent. Born in London and raised between her hometown and Pristina, after working as a model, she signed with Warner Records in 2014 and released her self-titled debut album in 2017.</p>
+                    <button>Listen to Dua Lipa</button>
+                </div>
+                
+                <div class="tarjeta-artista">
+                    <img src="C:/Users/Jane/Downloads/0x1900-000000-80-0-0 (1).jpg" alt="Olivia Rodrigo">
+                    <h3>Olivia Rodrigo</h3>
+                    <p>Olivia Isabel Rodrigo is an American singer, songwriter, and actress. She gained recognition in the late 2010s with her lead roles on the television programs Bizaardvark and High School Musical: The Musical: The Series.</p>
+                    <button>Listen to Olivia Rodrigo</button>
+                </div>
+                
+                <div class="tarjeta-artista">
+                    <img src="C:/Users/Jane/Downloads/captura-de-pantalla-2025-06-23-173727-82a41777-focus-0-0-1200-600.jpg" alt="Belinda">
+                    <h3>Belinda</h3>
+                    <p>Belinda Peregrín Schüll, known professionally as Belinda, is a Mexican actress and singer of Spanish origin. Born in Madrid, Spain, she immigrated with her family to Mexico in 1993.</p>
+                    <button>Listen to Belinda</button>
+                </div>
+            </main>
+            
+            <aside class="barra-lateral">
+                <div class="tarjeta-lateral">
+                    <h3>Trending Tracks</h3>
+                    <p>Explore the top pop releases scaling the global charts this week.</p>
+                </div>
+                
+                <div class="tarjeta-lateral">
+                    <h3>Live Concerts</h3>
+                    <p>Stay updated on upcoming stadium tours and festival dates for 2026.</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var nombreGuardado = localStorage.getItem("usuarioNombre");
+            if (nombreGuardado) {
+                document.getElementById("usuario-nombre").textContent = nombreGuardado;
+            }
+        });
+    </script>
+</body>
+</html>
